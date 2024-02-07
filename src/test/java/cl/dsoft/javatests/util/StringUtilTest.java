@@ -4,7 +4,6 @@ package cl.dsoft.javatests.util;
 
 public class StringUtilTest {
     public static void main(String[] args) {
-        String result = StringUtil.repeat("hola", 3);
         //System.out.println(result);
         /*
         if (!result.equals("holaholahola")) {
@@ -12,7 +11,7 @@ public class StringUtilTest {
             throw new RuntimeException("Error");
         }
         */
-        assertEquals(result, "holaholahola");
+        assertEquals(StringUtil.repeat("hola", 3), "holaholahola");
 
         String result2 = StringUtil.repeat("hola", 1);
         //System.out.println(result2);
@@ -22,6 +21,7 @@ public class StringUtilTest {
             throw new RuntimeException("Error");
          }
          */
+        assertEquals(StringUtil.repeat("hola", 1), "hola");
 
     }
 
